@@ -18,15 +18,19 @@ function generatePassword(){
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
+//Prompt starts once the btn is clicked
+function writePassword() {
+  prompt("Enter the length of characters for your password. Choose between 8 and 128 characters.");
+  confirm("Would you like to use uppercase Letters?")
+  confirm("Would you like to use lowercase letters?")
+  confirm("Would you like to use special characters?")
+  confirm("Would you like to use numbers?")
+}
 
 //GIVEN I need a new, secure password
 //WHEN I click the button to generate a password
-//THEN I am presented with a series of prompts for password criteria
-prompt("How many characters would you like to use? Choose between 8 and 128")
-confirm("Would you like to use uppercase Letters?")
-confirm("Would you like to use lowercase letters?")
-confirm("Would you like to use special characters?")
-confirm("Would you like to use numbers?")
+//THEN I am presented with a series of prompts for password criteria. 
+
 //WHEN prompted for password criteria
 //THEN I select which criteria to include in the password
 //WHEN prompted for the length of the password
