@@ -25,7 +25,7 @@ function writePassword() {
     alert("Choose between 8 to 128 characters");
     return writePassword();
   }
-  
+  //confirms
   var includeUppercase = confirm("Would you like to use uppercase Letters?");
 
   var includeLowercase = confirm("Would you like to use lowercase letters?");
@@ -33,7 +33,8 @@ function writePassword() {
   var includeNumbers = confirm("Would you like to use special characters?");
 
   var includeSymbols = confirm("Would you like to use numbers?");
-
+  
+  //Chooses characters 
   if (includeUppercase) {
     possibleCharacters += upperChar;
   }
@@ -50,6 +51,7 @@ function writePassword() {
     possibleCharacters += symbols;
   }
   
+  //Final loop
   for (var i = 0; i < characterAmount; i++) {
   password += possibleCharacters[Math.floor(Math.random() * possibleCharacters.length)];
   }
