@@ -37,10 +37,11 @@ function writePassword() {
   if (includeUppercase) {
     possibleCharacters += upperChar;
   }
-
+  
   if (includeLowercase) {
     possibleCharacters += lowerChar;
   }
+  
   if (includeNumbers) {
     possibleCharacters += numChar;
   }
@@ -54,6 +55,7 @@ function writePassword() {
   }
   passwordText.value = password;
 }
+
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
