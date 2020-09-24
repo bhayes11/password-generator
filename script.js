@@ -12,7 +12,7 @@ var password = "";
 var passwordText = document.querySelector("#password");
 var generateBtn = document.querySelector("#generate");
 
-// Write password to the #password input
+//Write password to the #password input
 function writePassword() {
   var password = "";
   possibleCharacters = "";
@@ -27,7 +27,7 @@ function writePassword() {
     return writePassword();
   }
 
-  //confirm used to
+  //Confirms guide user through password choices
   var includeUppercase = confirm("Would you like to use uppercase Letters?");
 
   var includeLowercase = confirm("Would you like to use lowercase letters?");
@@ -64,7 +64,7 @@ function writePassword() {
     possibleCharacters += symbols;
   }
 
-  //Final loop
+  //Final loop that outputs password
   for (var i = 0; i < characterAmount; i++) {
     password +=
       possibleCharacters[Math.floor(Math.random() * possibleCharacters.length)];
