@@ -21,7 +21,6 @@ function writePassword() {
   );
   if (characterAmount < 8) {
     alert("Choose between 8 to 128 characters");
-    return writePassword();
   } else if (characterAmount > 128) {
     alert("Choose between 8 to 128 characters");
     return writePassword();
